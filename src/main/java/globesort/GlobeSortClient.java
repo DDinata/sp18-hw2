@@ -52,7 +52,7 @@ public class GlobeSortClient {
         totalSortTime = System.nanoTime() - totalSortTime;
         double networkTime = ((double)(totalSortTime - response.getTime())/Math.pow(10,9))/2;
         System.out.println("Sorted array application thoroughput : " + ((double)totalSortTime/Math.pow(10,9)) + " seconds");
-        System.out.println("Sorted array network thoroughput : " + network + " seconds");
+        System.out.println("Sorted array network thoroughput : " + networkTime + " seconds");
     }
 
     public void shutdown() throws InterruptedException {
